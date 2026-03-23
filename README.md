@@ -1,5 +1,4 @@
-## Project info
-Local Flowershop Website
+# Welcome Labi Iris Flower Shop
 
 ## What technologies are used for this project?
 

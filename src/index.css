@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Alabaster - warm off-white gallery background */
+    --background: 43 33% 93%;
+    --foreground: 140 4% 24%;
+
+    /* Card surfaces */
+    --card: 43 33% 93%;
+    --card-foreground: 140 4% 24%;
+
+    /* Popover */
+    --popover: 43 33% 96%;
+    --popover-foreground: 140 4% 24%;
+
+    /* Charcoal - primary actions */
+    --primary: 140 4% 24%;
+    --primary-foreground: 43 33% 93%;
+
+    /* Stone - secondary surfaces */
+    --secondary: 30 5% 63%;
+    --secondary-foreground: 140 4% 24%;
+
+    /* Muted */
+    --muted: 40 10% 88%;
+    --muted-foreground: 30 5% 50%;
+
+    /* Accent - Gilded */
+    --accent: 33 38% 63%;
+    --accent-foreground: 140 4% 24%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 43 33% 93%;
+
+    --border: 40 12% 85%;
+    --input: 40 12% 85%;
+    --ring: 33 38% 63%;
+
+    --radius: 0.25rem;
+
+    /* Custom tokens */
+    --gilded: 33 38% 63%;
+    --stone: 30 5% 63%;
+    --alabaster: 43 33% 93%;
+
+    --sidebar-background: 43 33% 91%;
+    --sidebar-foreground: 140 4% 24%;
+    --sidebar-primary: 140 4% 24%;
+    --sidebar-primary-foreground: 43 33% 93%;
+    --sidebar-accent: 40 10% 88%;
+    --sidebar-accent-foreground: 140 4% 24%;
+    --sidebar-border: 40 12% 85%;
+    --sidebar-ring: 33 38% 63%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+  }
+}
+
+@layer utilities {
+  .font-serif-display {
+    font-family: 'Lora', serif;
+  }
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.undertitle {
+  color: #000;
+}
